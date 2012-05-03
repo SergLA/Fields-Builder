@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <lists>
+    <list id="list_01">
+      <listitem key="Key_1" label="Some Value"/>
+      <listitem key="Key_2" label="Another Value"/>
+      <listitem key="Key_3" label="New Value"/>
+      <listitem key="Key_4" label="Different Value"/>
+      <listitem key="Key_5" label="Surprise! Value"/>
+      <listitem key="Key_6" label="A Value"/>
+    </list>
+    <list id="list_02">
+      <listitem key="List_2_key_1" label="Value #1"/>
+      <listitem key="List_2_key_2" label="Value #2"/>
+      <listitem key="List_2_key_3" label="Value #3"/>
+      <listitem key="List_2_key_4" label="Value #4"/>
+    </list>
+  </lists>
+  <sections>
+    <section id="section_01" label="Fields for section 1"/>
+    <section id="section_03" label="Some other fields"/>
+    <section id="section_02" label="Second section by ID"/>
+  </sections>
+</metadata>

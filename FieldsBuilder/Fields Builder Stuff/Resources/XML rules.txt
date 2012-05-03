@@ -1,0 +1,97 @@
+Fields xml
+
+<fields>
+  <field label="Some Title">
+    <name>some-title</name>
+    <type>string</type>
+    <limit>35</limit>
+    <value>This is default value.</value>
+    <required>YES</required>
+    <visible>YES</visible>
+    <section>section_01</section>
+  </field>
+  ...
+</fields>
+
+
+label attribute - represents UI label for proper field. Required attribute.
+
+name - represents tag name for field in resulted xml file. If empty or absent proper field shouldn't pass to the result xml.
+
+type - represents field's type or list ID. If empty or absent field assumed as string type. 
+
+limit - limit number of the symbols for entrance. If absent, empty or 0 then entrance is limited by system settings for proper type (string, integer, etc.).
+
+value - default value for UI appearence. Could be absent.
+
+required - is fields required for filling. If absent then field is not required.
+
+visible - represents does field is visible for user. If field is required then it visible always.
+
+section - place or group kind for UI representation. Contains section ID. If empty then field will be placed to last section without label.
+
+
+
+
+MetaData xml
+
+<metadata>
+  <lists>
+    <list id="list_01">
+      <listitem key="" label=""/>
+      ...
+    </list>
+    <list id="list_02">
+      <listitem key="" label=""/>
+      ...
+    </list>
+  </lists>
+  <sections>
+    <section id="section_01" label="Some Section"/>
+    ...
+  </sections>
+</metadata>
+
+
+lists - contains all lists for fields.
+list - proper list.
+  id - list id. Value of field's type property.
+  key - value that will be stored at field's value property at result xml.
+  label - UI representation of the list item.
+
+sections - all sections for field's representation for table view.
+section - proper section.
+  id - section id. Value of field's type section.
+  label - header value for proper section at table view.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

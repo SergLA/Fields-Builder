@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field label="Title">
+        <name>title</name>
+        <type>string</type>
+        <limit>50</limit>
+        <value></value>
+        <required>YES</required>
+        <visible>YES</visible>
+        <section>section_01</section>
+    </field>
+    <field label="Description">
+        <name>description</name>
+        <type>string</type>
+        <limit></limit>
+        <value></value>
+        <required>YES</required>
+        <visible>YES</visible>
+        <section>section_01</section>
+    </field>
+    <field label="List Value">
+        <name>category</name>
+        <type>list_01</type>
+        <limit></limit>
+        <value></value>
+        <required>YES</required>
+        <visible>YES</visible>
+        <section>section_01</section>
+    </field>
+    <field label="Special Field">
+        <name></name>
+        <type>some_special_type</type>
+        <limit></limit>
+        <value></value>
+        <required>YES</required>
+        <visible>YES</visible>
+        <section>section_02</section>
+    </field>
+    <field label="Float Value">
+        <name>floatValue</name>
+        <type>float</type>
+        <limit></limit>
+        <value></value>
+        <required>NO</required>
+        <visible>YES</visible>
+        <section>section_03</section>
+    </field>
+    <field label="Integer Value">
+        <name>integerValue</name>
+        <type>int</type>
+        <limit>5</limit>
+        <value></value>
+        <required>NO</required>
+        <visible>YES</visible>
+        <section>section_03</section>
+    </field>
+    <field label="String Value">
+        <name>stringValue</name>
+        <type>string</type>
+        <limit>40</limit>
+        <value></value>
+        <required>NO</required>
+        <visible>YES</visible>
+        <section>section_03</section>
+    </field>
+    <field label="Another List">
+        <name>anotherList</name>
+        <type>list_02</type>
+        <limit></limit>
+        <value>EMAIL</value>
+        <required>NO</required>
+        <visible>YES</visible>
+        <section>section_03</section>
+    </field>
+    <field label="Bool Value">
+        <name>boolValue</name>
+        <type>bool</type>
+        <limit></limit>
+        <value>YES</value>
+        <required>NO</required>
+        <visible>NO</visible>
+        <section>section_03</section>
+    </field>
+</fields>

@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6558DC31155300EF00905D24 /* FBListFieldEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6558DC30155300EF00905D24 /* FBListFieldEditor.xib */; };
+		6558DC4D1553071D00905D24 /* FBBoolFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6558DC421553071C00905D24 /* FBBoolFieldCell.m */; };
+		6558DC4E1553071D00905D24 /* FBFloatFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6558DC441553071C00905D24 /* FBFloatFieldCell.m */; };
+		6558DC4F1553071D00905D24 /* FBListFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6558DC461553071D00905D24 /* FBListFieldCell.m */; };
+		6558DC501553071D00905D24 /* FBNumberFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6558DC481553071D00905D24 /* FBNumberFieldCell.m */; };
+		6558DC511553071D00905D24 /* FBTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6558DC4A1553071D00905D24 /* FBTextFieldCell.m */; };
+		6558DC521553071D00905D24 /* FBSomeButtonFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6558DC4C1553071D00905D24 /* FBSomeButtonFieldCell.m */; };
+		6558DC5A155307E600905D24 /* FBBoolFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6558DC54155307E600905D24 /* FBBoolFieldCell.xib */; };
+		6558DC5B155307E600905D24 /* FBFloatFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6558DC55155307E600905D24 /* FBFloatFieldCell.xib */; };
+		6558DC5C155307E600905D24 /* FBListFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6558DC56155307E600905D24 /* FBListFieldCell.xib */; };
+		6558DC5D155307E600905D24 /* FBNumberFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6558DC57155307E600905D24 /* FBNumberFieldCell.xib */; };
+		6558DC5E155307E600905D24 /* FBTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6558DC58155307E600905D24 /* FBTextFieldCell.xib */; };
+		6558DC5F155307E600905D24 /* FBSomeButtonFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6558DC59155307E600905D24 /* FBSomeButtonFieldCell.xib */; };
+		65633A4A155297220071152C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65633A49155297220071152C /* UIKit.framework */; };
+		65633A4C155297220071152C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65633A4B155297220071152C /* Foundation.framework */; };
+		65633A4E155297220071152C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65633A4D155297220071152C /* CoreGraphics.framework */; };
+		65633A54155297220071152C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65633A52155297220071152C /* InfoPlist.strings */; };
+		65633A57155297220071152C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65633A56155297220071152C /* main.m */; };
+		65633A5A155297220071152C /* FieldsBuilderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65633A59155297220071152C /* FieldsBuilderAppDelegate.m */; };
+		65633A6A15529D3B0071152C /* FieldsBuilder.png in Resources */ = {isa = PBXBuildFile; fileRef = 65633A6815529D3B0071152C /* FieldsBuilder.png */; };
+		65633A6B15529D3B0071152C /* FieldsBuilder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65633A6915529D3B0071152C /* FieldsBuilder@2x.png */; };
+		65633A7A1552A4890071152C /* FBMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65633A791552A4890071152C /* FBMainView.m */; };
+		65633A7C1552A4AD0071152C /* FBMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65633A7B1552A4AD0071152C /* FBMainView.xib */; };
+		65B6DC141552F80500C7A047 /* FBListFieldEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6DC131552F80500C7A047 /* FBListFieldEditor.m */; };
+		65D4E2FA1552C31A006EDF5B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D4E2F91552C31A006EDF5B /* MainWindow.xib */; };
+		65D4E3141552C329006EDF5B /* FBListsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E2FF1552C329006EDF5B /* FBListsProvider.m */; };
+		65D4E3151552C329006EDF5B /* FBSectionsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E3011552C329006EDF5B /* FBSectionsProvider.m */; };
+		65D4E3161552C329006EDF5B /* FBField.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E3031552C329006EDF5B /* FBField.m */; };
+		65D4E3171552C329006EDF5B /* FBFieldsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E3051552C329006EDF5B /* FBFieldsStorage.m */; };
+		65D4E3181552C329006EDF5B /* FBXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E3071552C329006EDF5B /* FBXMLParser.m */; };
+		65D4E3191552C329006EDF5B /* FBList.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E30A1552C329006EDF5B /* FBList.m */; };
+		65D4E31A1552C329006EDF5B /* FBListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E30C1552C329006EDF5B /* FBListItem.m */; };
+		65D4E31B1552C329006EDF5B /* FBSectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E30E1552C329006EDF5B /* FBSectionItem.m */; };
+		65D4E31C1552C329006EDF5B /* fields.xml in Resources */ = {isa = PBXBuildFile; fileRef = 65D4E3101552C329006EDF5B /* fields.xml */; };
+		65D4E31D1552C329006EDF5B /* metadata.xml in Resources */ = {isa = PBXBuildFile; fileRef = 65D4E3111552C329006EDF5B /* metadata.xml */; };
+		65D4E31E1552C329006EDF5B /* XML rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65D4E3121552C329006EDF5B /* XML rules.txt */; };
+		65D4E3211552C371006EDF5B /* FBFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E3201552C371006EDF5B /* FBFieldsViewController.m */; };
+		65D4E3231552C3E9006EDF5B /* FBFieldsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D4E3221552C3E9006EDF5B /* FBFieldsView.xib */; };
+		65D4E3271552C547006EDF5B /* FBFieldsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E3261552C547006EDF5B /* FBFieldsDataSource.m */; };
+		65D4E32E1552C71F006EDF5B /* FBBaseFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E32B1552C71F006EDF5B /* FBBaseFieldCell.m */; };
+		65D4E32F1552C71F006EDF5B /* FBCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4E32D1552C71F006EDF5B /* FBCellFactory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6558DC30155300EF00905D24 /* FBListFieldEditor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBListFieldEditor.xib; sourceTree = "<group>"; };
+		6558DC411553071C00905D24 /* FBBoolFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBoolFieldCell.h; sourceTree = "<group>"; };
+		6558DC421553071C00905D24 /* FBBoolFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBoolFieldCell.m; sourceTree = "<group>"; };
+		6558DC431553071C00905D24 /* FBFloatFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFloatFieldCell.h; sourceTree = "<group>"; };
+		6558DC441553071C00905D24 /* FBFloatFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFloatFieldCell.m; sourceTree = "<group>"; };
+		6558DC451553071C00905D24 /* FBListFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBListFieldCell.h; sourceTree = "<group>"; };
+		6558DC461553071D00905D24 /* FBListFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBListFieldCell.m; sourceTree = "<group>"; };
+		6558DC471553071D00905D24 /* FBNumberFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBNumberFieldCell.h; sourceTree = "<group>"; };
+		6558DC481553071D00905D24 /* FBNumberFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBNumberFieldCell.m; sourceTree = "<group>"; };
+		6558DC491553071D00905D24 /* FBTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTextFieldCell.h; sourceTree = "<group>"; };
+		6558DC4A1553071D00905D24 /* FBTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTextFieldCell.m; sourceTree = "<group>"; };
+		6558DC4B1553071D00905D24 /* FBSomeButtonFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FBSomeButtonFieldCell.h; sourceTree = "<group>"; };
+		6558DC4C1553071D00905D24 /* FBSomeButtonFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSomeButtonFieldCell.m; sourceTree = "<group>"; };
+		6558DC54155307E600905D24 /* FBBoolFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBBoolFieldCell.xib; sourceTree = "<group>"; };
+		6558DC55155307E600905D24 /* FBFloatFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBFloatFieldCell.xib; sourceTree = "<group>"; };
+		6558DC56155307E600905D24 /* FBListFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBListFieldCell.xib; sourceTree = "<group>"; };
+		6558DC57155307E600905D24 /* FBNumberFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBNumberFieldCell.xib; sourceTree = "<group>"; };
+		6558DC58155307E600905D24 /* FBTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBTextFieldCell.xib; sourceTree = "<group>"; };
+		6558DC59155307E600905D24 /* FBSomeButtonFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBSomeButtonFieldCell.xib; sourceTree = "<group>"; };
+		65633A45155297220071152C /* FieldsBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldsBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65633A49155297220071152C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65633A4B155297220071152C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65633A4D155297220071152C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65633A51155297220071152C /* FieldsBuilder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FieldsBuilder-Info.plist"; sourceTree = "<group>"; };
+		65633A53155297220071152C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65633A55155297220071152C /* FieldsBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FieldsBuilder-Prefix.pch"; sourceTree = "<group>"; };
+		65633A56155297220071152C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65633A58155297220071152C /* FieldsBuilderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FieldsBuilderAppDelegate.h; sourceTree = "<group>"; };
+		65633A59155297220071152C /* FieldsBuilderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FieldsBuilderAppDelegate.m; sourceTree = "<group>"; };
+		65633A6815529D3B0071152C /* FieldsBuilder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FieldsBuilder.png; sourceTree = "<group>"; };
+		65633A6915529D3B0071152C /* FieldsBuilder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FieldsBuilder@2x.png"; sourceTree = "<group>"; };
+		65633A781552A4890071152C /* FBMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBMainView.h; sourceTree = "<group>"; };
+		65633A791552A4890071152C /* FBMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMainView.m; sourceTree = "<group>"; };
+		65633A7B1552A4AD0071152C /* FBMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBMainView.xib; sourceTree = "<group>"; };
+		65B6DC121552F80500C7A047 /* FBListFieldEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBListFieldEditor.h; sourceTree = "<group>"; };
+		65B6DC131552F80500C7A047 /* FBListFieldEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBListFieldEditor.m; sourceTree = "<group>"; };
+		65D4E2F91552C31A006EDF5B /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		65D4E2FE1552C329006EDF5B /* FBListsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBListsProvider.h; sourceTree = "<group>"; };
+		65D4E2FF1552C329006EDF5B /* FBListsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBListsProvider.m; sourceTree = "<group>"; };
+		65D4E3001552C329006EDF5B /* FBSectionsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSectionsProvider.h; sourceTree = "<group>"; };
+		65D4E3011552C329006EDF5B /* FBSectionsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSectionsProvider.m; sourceTree = "<group>"; };
+		65D4E3021552C329006EDF5B /* FBField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBField.h; sourceTree = "<group>"; };
+		65D4E3031552C329006EDF5B /* FBField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBField.m; sourceTree = "<group>"; };
+		65D4E3041552C329006EDF5B /* FBFieldsStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFieldsStorage.h; sourceTree = "<group>"; };
+		65D4E3051552C329006EDF5B /* FBFieldsStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFieldsStorage.m; sourceTree = "<group>"; };
+		65D4E3061552C329006EDF5B /* FBXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBXMLParser.h; sourceTree = "<group>"; };
+		65D4E3071552C329006EDF5B /* FBXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBXMLParser.m; sourceTree = "<group>"; };
+		65D4E3091552C329006EDF5B /* FBList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBList.h; sourceTree = "<group>"; };
+		65D4E30A1552C329006EDF5B /* FBList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBList.m; sourceTree = "<group>"; };
+		65D4E30B1552C329006EDF5B /* FBListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBListItem.h; sourceTree = "<group>"; };
+		65D4E30C1552C329006EDF5B /* FBListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBListItem.m; sourceTree = "<group>"; };
+		65D4E30D1552C329006EDF5B /* FBSectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSectionItem.h; sourceTree = "<group>"; };
+		65D4E30E1552C329006EDF5B /* FBSectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSectionItem.m; sourceTree = "<group>"; };
+		65D4E3101552C329006EDF5B /* fields.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fields.xml; sourceTree = "<group>"; };
+		65D4E3111552C329006EDF5B /* metadata.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = metadata.xml; sourceTree = "<group>"; };
+		65D4E3121552C329006EDF5B /* XML rules.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "XML rules.txt"; sourceTree = "<group>"; };
+		65D4E31F1552C371006EDF5B /* FBFieldsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFieldsViewController.h; sourceTree = "<group>"; };
+		65D4E3201552C371006EDF5B /* FBFieldsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFieldsViewController.m; sourceTree = "<group>"; };
+		65D4E3221552C3E9006EDF5B /* FBFieldsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBFieldsView.xib; sourceTree = "<group>"; };
+		65D4E3251552C547006EDF5B /* FBFieldsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFieldsDataSource.h; sourceTree = "<group>"; };
+		65D4E3261552C547006EDF5B /* FBFieldsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFieldsDataSource.m; sourceTree = "<group>"; };
+		65D4E32A1552C71F006EDF5B /* FBBaseFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBaseFieldCell.h; sourceTree = "<group>"; };
+		65D4E32B1552C71F006EDF5B /* FBBaseFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBaseFieldCell.m; sourceTree = "<group>"; };
+		65D4E32C1552C71F006EDF5B /* FBCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBCellFactory.h; sourceTree = "<group>"; };
+		65D4E32D1552C71F006EDF5B /* FBCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBCellFactory.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65633A42155297210071152C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65633A4A155297220071152C /* UIKit.framework in Frameworks */,
+				65633A4C155297220071152C /* Foundation.framework in Frameworks */,
+				65633A4E155297220071152C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6558DC53155307D200905D24 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6558DC54155307E600905D24 /* FBBoolFieldCell.xib */,
+				6558DC55155307E600905D24 /* FBFloatFieldCell.xib */,
+				6558DC56155307E600905D24 /* FBListFieldCell.xib */,
+				6558DC57155307E600905D24 /* FBNumberFieldCell.xib */,
+				6558DC58155307E600905D24 /* FBTextFieldCell.xib */,
+				6558DC59155307E600905D24 /* FBSomeButtonFieldCell.xib */,
+			);
+			name = "Table Cells";
+			sourceTree = "<group>";
+		};
+		65633A3A155297210071152C = {
+			isa = PBXGroup;
+			children = (
+				65633A4F155297220071152C /* FieldsBuilder */,
+				65633A48155297220071152C /* Frameworks */,
+				65633A46155297220071152C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65633A46155297220071152C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65633A45155297220071152C /* FieldsBuilder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65633A48155297220071152C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65633A49155297220071152C /* UIKit.framework */,
+				65633A4B155297220071152C /* Foundation.framework */,
+				65633A4D155297220071152C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65633A4F155297220071152C /* FieldsBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				65D4E2F81552C1FE006EDF5B /* Fields Builder Stuff */,
+				65633A7715529F1E0071152C /* Controllers */,
+				65633A6C15529D790071152C /* Views */,
+				65633A50155297220071152C /* Supporting Files */,
+				65633A6715529CF00071152C /* Resources */,
+				65633A58155297220071152C /* FieldsBuilderAppDelegate.h */,
+				65633A59155297220071152C /* FieldsBuilderAppDelegate.m */,
+			);
+			path = FieldsBuilder;
+			sourceTree = "<group>";
+		};
+		65633A50155297220071152C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65633A51155297220071152C /* FieldsBuilder-Info.plist */,
+				65633A52155297220071152C /* InfoPlist.strings */,
+				65633A55155297220071152C /* FieldsBuilder-Prefix.pch */,
+				65633A56155297220071152C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65633A6715529CF00071152C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65633A7515529EC00071152C /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		65633A6C15529D790071152C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65D4E2F91552C31A006EDF5B /* MainWindow.xib */,
+				65633A7B1552A4AD0071152C /* FBMainView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65633A7515529EC00071152C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				65633A6815529D3B0071152C /* FieldsBuilder.png */,
+				65633A6915529D3B0071152C /* FieldsBuilder@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		65633A7715529F1E0071152C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65633A781552A4890071152C /* FBMainView.h */,
+				65633A791552A4890071152C /* FBMainView.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		65B6DC111552F80500C7A047 /* Field Editors */ = {
+			isa = PBXGroup;
+			children = (
+				65B6DC121552F80500C7A047 /* FBListFieldEditor.h */,
+				65B6DC131552F80500C7A047 /* FBListFieldEditor.m */,
+			);
+			path = "Field Editors";
+			sourceTree = "<group>";
+		};
+		65D4E2F81552C1FE006EDF5B /* Fields Builder Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				65D4E2FC1552C329006EDF5B /* Data */,
+				65D4E3241552C547006EDF5B /* DataSource */,
+				65D4E3131552C329006EDF5B /* Views */,
+				65D4E2FB1552C329006EDF5B /* Controllers */,
+				65D4E30F1552C329006EDF5B /* Resources */,
+			);
+			path = "Fields Builder Stuff";
+			sourceTree = "<group>";
+		};
+		65D4E2FB1552C329006EDF5B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65B6DC111552F80500C7A047 /* Field Editors */,
+				65D4E3291552C71E006EDF5B /* Table Cells */,
+				65D4E31F1552C371006EDF5B /* FBFieldsViewController.h */,
+				65D4E3201552C371006EDF5B /* FBFieldsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		65D4E2FC1552C329006EDF5B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				65D4E3081552C329006EDF5B /* MetaData */,
+				65D4E2FD1552C329006EDF5B /* DataProviders */,
+				65D4E3021552C329006EDF5B /* FBField.h */,
+				65D4E3031552C329006EDF5B /* FBField.m */,
+				65D4E3041552C329006EDF5B /* FBFieldsStorage.h */,
+				65D4E3051552C329006EDF5B /* FBFieldsStorage.m */,
+				65D4E3061552C329006EDF5B /* FBXMLParser.h */,
+				65D4E3071552C329006EDF5B /* FBXMLParser.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		65D4E2FD1552C329006EDF5B /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				65D4E2FE1552C329006EDF5B /* FBListsProvider.h */,
+				65D4E2FF1552C329006EDF5B /* FBListsProvider.m */,
+				65D4E3001552C329006EDF5B /* FBSectionsProvider.h */,
+				65D4E3011552C329006EDF5B /* FBSectionsProvider.m */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		65D4E3081552C329006EDF5B /* MetaData */ = {
+			isa = PBXGroup;
+			children = (
+				65D4E3091552C329006EDF5B /* FBList.h */,
+				65D4E30A1552C329006EDF5B /* FBList.m */,
+				65D4E30B1552C329006EDF5B /* FBListItem.h */,
+				65D4E30C1552C329006EDF5B /* FBListItem.m */,
+				65D4E30D1552C329006EDF5B /* FBSectionItem.h */,
+				65D4E30E1552C329006EDF5B /* FBSectionItem.m */,
+			);
+			path = MetaData;
+			sourceTree = "<group>";
+		};
+		65D4E30F1552C329006EDF5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65D4E3101552C329006EDF5B /* fields.xml */,
+				65D4E3111552C329006EDF5B /* metadata.xml */,
+				65D4E3121552C329006EDF5B /* XML rules.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		65D4E3131552C329006EDF5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6558DC53155307D200905D24 /* Table Cells */,
+				6558DC30155300EF00905D24 /* FBListFieldEditor.xib */,
+				65D4E3221552C3E9006EDF5B /* FBFieldsView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65D4E3241552C547006EDF5B /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				65D4E3251552C547006EDF5B /* FBFieldsDataSource.h */,
+				65D4E3261552C547006EDF5B /* FBFieldsDataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		65D4E3291552C71E006EDF5B /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				65D4E32C1552C71F006EDF5B /* FBCellFactory.h */,
+				65D4E32D1552C71F006EDF5B /* FBCellFactory.m */,
+				65D4E32A1552C71F006EDF5B /* FBBaseFieldCell.h */,
+				65D4E32B1552C71F006EDF5B /* FBBaseFieldCell.m */,
+				6558DC411553071C00905D24 /* FBBoolFieldCell.h */,
+				6558DC421553071C00905D24 /* FBBoolFieldCell.m */,
+				6558DC431553071C00905D24 /* FBFloatFieldCell.h */,
+				6558DC441553071C00905D24 /* FBFloatFieldCell.m */,
+				6558DC451553071C00905D24 /* FBListFieldCell.h */,
+				6558DC461553071D00905D24 /* FBListFieldCell.m */,
+				6558DC471553071D00905D24 /* FBNumberFieldCell.h */,
+				6558DC481553071D00905D24 /* FBNumberFieldCell.m */,
+				6558DC491553071D00905D24 /* FBTextFieldCell.h */,
+				6558DC4A1553071D00905D24 /* FBTextFieldCell.m */,
+				6558DC4B1553071D00905D24 /* FBSomeButtonFieldCell.h */,
+				6558DC4C1553071D00905D24 /* FBSomeButtonFieldCell.m */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65633A44155297210071152C /* FieldsBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65633A60155297220071152C /* Build configuration list for PBXNativeTarget "FieldsBuilder" */;
+			buildPhases = (
+				65633A41155297210071152C /* Sources */,
+				65633A42155297210071152C /* Frameworks */,
+				65633A43155297210071152C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FieldsBuilder;
+			productName = FieldsBuilder;
+			productReference = 65633A45155297220071152C /* FieldsBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65633A3C155297210071152C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 65633A3F155297210071152C /* Build configuration list for PBXProject "FieldsBuilder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65633A3A155297210071152C;
+			productRefGroup = 65633A46155297220071152C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65633A44155297210071152C /* FieldsBuilder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65633A43155297210071152C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65633A54155297220071152C /* InfoPlist.strings in Resources */,
+				65633A6A15529D3B0071152C /* FieldsBuilder.png in Resources */,
+				65633A6B15529D3B0071152C /* FieldsBuilder@2x.png in Resources */,
+				65633A7C1552A4AD0071152C /* FBMainView.xib in Resources */,
+				65D4E2FA1552C31A006EDF5B /* MainWindow.xib in Resources */,
+				65D4E31C1552C329006EDF5B /* fields.xml in Resources */,
+				65D4E31D1552C329006EDF5B /* metadata.xml in Resources */,
+				65D4E31E1552C329006EDF5B /* XML rules.txt in Resources */,
+				65D4E3231552C3E9006EDF5B /* FBFieldsView.xib in Resources */,
+				6558DC31155300EF00905D24 /* FBListFieldEditor.xib in Resources */,
+				6558DC5A155307E600905D24 /* FBBoolFieldCell.xib in Resources */,
+				6558DC5B155307E600905D24 /* FBFloatFieldCell.xib in Resources */,
+				6558DC5C155307E600905D24 /* FBListFieldCell.xib in Resources */,
+				6558DC5D155307E600905D24 /* FBNumberFieldCell.xib in Resources */,
+				6558DC5E155307E600905D24 /* FBTextFieldCell.xib in Resources */,
+				6558DC5F155307E600905D24 /* FBSomeButtonFieldCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65633A41155297210071152C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65633A57155297220071152C /* main.m in Sources */,
+				65633A5A155297220071152C /* FieldsBuilderAppDelegate.m in Sources */,
+				65633A7A1552A4890071152C /* FBMainView.m in Sources */,
+				65D4E3141552C329006EDF5B /* FBListsProvider.m in Sources */,
+				65D4E3151552C329006EDF5B /* FBSectionsProvider.m in Sources */,
+				65D4E3161552C329006EDF5B /* FBField.m in Sources */,
+				65D4E3171552C329006EDF5B /* FBFieldsStorage.m in Sources */,
+				65D4E3181552C329006EDF5B /* FBXMLParser.m in Sources */,
+				65D4E3191552C329006EDF5B /* FBList.m in Sources */,
+				65D4E31A1552C329006EDF5B /* FBListItem.m in Sources */,
+				65D4E31B1552C329006EDF5B /* FBSectionItem.m in Sources */,
+				65D4E3211552C371006EDF5B /* FBFieldsViewController.m in Sources */,
+				65D4E3271552C547006EDF5B /* FBFieldsDataSource.m in Sources */,
+				65D4E32E1552C71F006EDF5B /* FBBaseFieldCell.m in Sources */,
+				65D4E32F1552C71F006EDF5B /* FBCellFactory.m in Sources */,
+				65B6DC141552F80500C7A047 /* FBListFieldEditor.m in Sources */,
+				6558DC4D1553071D00905D24 /* FBBoolFieldCell.m in Sources */,
+				6558DC4E1553071D00905D24 /* FBFloatFieldCell.m in Sources */,
+				6558DC4F1553071D00905D24 /* FBListFieldCell.m in Sources */,
+				6558DC501553071D00905D24 /* FBNumberFieldCell.m in Sources */,
+				6558DC511553071D00905D24 /* FBTextFieldCell.m in Sources */,
+				6558DC521553071D00905D24 /* FBSomeButtonFieldCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65633A52155297220071152C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65633A53155297220071152C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65633A5E155297220071152C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		65633A5F155297220071152C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		65633A61155297220071152C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FieldsBuilder/FieldsBuilder-Prefix.pch";
+				INFOPLIST_FILE = "FieldsBuilder/FieldsBuilder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		65633A62155297220071152C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FieldsBuilder/FieldsBuilder-Prefix.pch";
+				INFOPLIST_FILE = "FieldsBuilder/FieldsBuilder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65633A3F155297210071152C /* Build configuration list for PBXProject "FieldsBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65633A5E155297220071152C /* Debug */,
+				65633A5F155297220071152C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65633A60155297220071152C /* Build configuration list for PBXNativeTarget "FieldsBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65633A61155297220071152C /* Debug */,
+				65633A62155297220071152C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65633A3C155297210071152C /* Project object */;
+}
