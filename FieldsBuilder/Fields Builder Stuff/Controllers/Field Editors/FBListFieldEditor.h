@@ -8,7 +8,12 @@
 
 @class FBField;
 
-@interface FBListFieldEditor : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface FBListFieldEditor : UIViewController <UITableViewDataSource, UITableViewDelegate> 
+{
+    UITableView *listTableView;
+}
+
+@property (nonatomic, retain) IBOutlet UITableView *listTableView;
 
 - (id)initWithField:(FBField *)aField;
 

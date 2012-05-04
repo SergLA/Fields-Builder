@@ -21,6 +21,7 @@
 
 
 @implementation FBListFieldEditor
+@synthesize listTableView;
 
 @synthesize field;
 @synthesize list;
@@ -59,10 +60,18 @@
     [field release];
     [list release];
     
+    [listTableView release];
     [super dealloc];
 }
 
 #pragma mark - View lifecycle
+
+- (void)viewDidUnload 
+{
+    [self setListTableView:nil];
+    
+    [super viewDidUnload];
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -87,6 +96,9 @@
     }
     
     theCell.textLabel.text = [self.list itemLabelForIndex:indexPath.row];
+    theCell.accessoryType = [self.field.value isEqualToString:[self.list itemKeyForIndex:indexPath.row]]
+        ? UITableViewCellAccessoryCheckmark
+        : UITableViewCellAccessoryNone;
     
     return theCell;
 }
@@ -95,7 +107,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    UITableViewCell *theCell = [tableView cellForRowAtIndexPath:indexPath];
+    if (theCell.accessoryType == UITableViewCellAccessoryNone)
+    {
+        self.field.value = [self.list itemKeyForIndex:indexPath.row];
+        [tableView reloadData];
+    }
 }
 
 @end

@@ -9,6 +9,9 @@
 #import "FBField.h"
 
 
+NSString *kFBFieldValueProperty = @"value";
+
+
 @implementation FBField
 
 @synthesize name;

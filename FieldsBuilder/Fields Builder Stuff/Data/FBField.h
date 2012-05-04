@@ -7,6 +7,10 @@
 //
 
 
+// property names for KVO stuff
+NSString *kFBFieldValueProperty;
+
+
 @interface FBField : NSObject 
 
 @property (nonatomic, readonly) NSString *name;
