@@ -67,7 +67,7 @@
         <name>anotherList</name>
         <type>list_02</type>
         <limit></limit>
-        <value>EMAIL</value>
+        <value>List_2_key_1</value>
         <required>NO</required>
         <visible>YES</visible>
         <section>section_03</section>
