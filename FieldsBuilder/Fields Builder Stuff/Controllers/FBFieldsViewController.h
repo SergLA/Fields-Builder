@@ -9,7 +9,7 @@
 @class FBFieldsStorage;
 @class FBFieldsDataSource;
 
-@interface FBFieldsViewController : UIViewController <UITableViewDelegate> {
+@interface FBFieldsViewController : UITableViewController {
     FBFieldsDataSource *dataSource;
 }
 
