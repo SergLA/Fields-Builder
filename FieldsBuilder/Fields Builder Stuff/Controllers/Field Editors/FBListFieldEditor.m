@@ -50,7 +50,7 @@
     if (self) 
     {
         self->field = [aField retain];
-        self->list = [[FBListsProvider lists] listForID:aField.type];
+        self->list = [[[FBListsProvider lists] listForID:aField.type] retain];
     }
     return self;
 }
