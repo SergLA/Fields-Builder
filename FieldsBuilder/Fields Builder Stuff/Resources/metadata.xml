@@ -8,6 +8,7 @@
             <listitem key="Key_4" label="Different Value"/>
             <listitem key="Key_5" label="Surprise! Value"/>
             <listitem key="Key_6" label="A Value"/>
+            <listitem key="Key_7" label="Some Very Long And Important Value"/>
         </list>
         <list id="list_02">
             <listitem key="List_2_key_1" label="Value #1"/>
