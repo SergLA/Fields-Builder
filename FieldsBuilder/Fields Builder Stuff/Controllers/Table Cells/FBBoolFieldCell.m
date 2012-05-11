@@ -7,7 +7,7 @@
 //
 
 #import "FBBoolFieldCell.h"
-
+#import "FBField.h"
 
 @implementation FBBoolFieldCell
 
@@ -18,7 +18,22 @@
 {
     [titleLabel release];
     [valueSwitch release];
+    
     [super dealloc];
+}
+
+- (void)setupWithField:(FBField *)aField
+{
+    [super setupWithField:aField];
+    
+    self.titleLabel.text = aField.label;
+    
+    self.valueSwitch.on = [aField.value boolValue];
+}
+
+- (IBAction)valueChanged:(id)sender
+{
+    self.cellField.value = self.valueSwitch.on ? @"YES" : @"NO";
 }
 
 @end

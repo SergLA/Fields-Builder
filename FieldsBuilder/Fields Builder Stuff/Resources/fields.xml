@@ -96,7 +96,7 @@
         <limit></limit>
         <value>YES</value>
         <required>NO</required>
-        <visible>NO</visible>
+        <visible>YES</visible>
         <section>section_03</section>
     </field>
 </fields>
