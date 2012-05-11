@@ -13,7 +13,7 @@
         <name>description</name>
         <type>string</type>
         <limit></limit>
-        <value></value>
+        <value>Default value</value>
         <required>YES</required>
         <visible>YES</visible>
         <section>section_01</section>
@@ -40,6 +40,15 @@
         <name>floatValue</name>
         <type>float</type>
         <limit></limit>
+        <value>13.6</value>
+        <required>NO</required>
+        <visible>YES</visible>
+        <section>section_03</section>
+    </field>
+    <field label="Float (L=10)">
+        <name>floatValue</name>
+        <type>float</type>
+        <limit>10</limit>
         <value></value>
         <required>NO</required>
         <visible>YES</visible>
@@ -49,7 +58,7 @@
         <name>integerValue</name>
         <type>int</type>
         <limit>5</limit>
-        <value></value>
+        <value>134</value>
         <required>NO</required>
         <visible>YES</visible>
         <section>section_03</section>
