@@ -51,12 +51,30 @@
     self.valueTextField.frame = theFrame;
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
+- (void)textFieldDidEndEditing:(UITextField *)aTextField
 {
-    self.cellField.value = textField.text;
-    [textField resignFirstResponder];
+    if (![self.cellField.value isEqualToString:aTextField.text])
+    {
+        self.cellField.value = aTextField.text;
+    }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)aTextField
+{    
+    [aTextField resignFirstResponder];
     
     return YES;    
+}
+
+- (BOOL)textField:(UITextField *)aTextField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if (self.cellField.limit <= 0) 
+    {
+        return YES;
+    }
+    
+    NSString *theResultString = [aTextField.text stringByReplacingCharactersInRange:range withString:string];
+    return [theResultString length] <= self.cellField.limit;
 }
 
 @end
