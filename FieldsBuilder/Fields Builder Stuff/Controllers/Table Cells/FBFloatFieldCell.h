@@ -9,11 +9,13 @@
 #import "FBBaseFieldCell.h"
 
 
-@interface FBFloatFieldCell : FBBaseFieldCell 
+@interface FBFloatFieldCell : FBBaseFieldCell <UITextFieldDelegate>
 {    
     UILabel *titleLabel;
+    UITextField *valueTextField;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *titleLabel;
+@property (nonatomic, retain) IBOutlet UITextField *valueTextField;
 
 @end
