@@ -70,7 +70,7 @@
     NSString *theResultString = [aTextField.text stringByReplacingCharactersInRange:range 
                                                                          withString:string];
     
-    NSString *theFloatPattern = @"^[0-9]*\.?[0-9]*$";
+    NSString *theFloatPattern = @"^[0-9]*\\.?[0-9]*$";
     
     NSRegularExpression *theRegExp = [NSRegularExpression regularExpressionWithPattern:theFloatPattern 
                                                                                options:NSRegularExpressionCaseInsensitive 
