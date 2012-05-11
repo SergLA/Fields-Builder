@@ -242,6 +242,8 @@ ParserState;
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName 
   namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {    
+    self.state = psReady;
+    
     // MetaData Part
     {
         if ([elementName isEqualToString:@"list"]) 
