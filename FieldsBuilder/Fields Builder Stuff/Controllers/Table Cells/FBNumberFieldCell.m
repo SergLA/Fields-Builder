@@ -29,6 +29,8 @@
 
     self.titleLabel.text = aField.label;
     [self.titleLabel sizeToFit];
+    
+    self.valueTextField.text = aField.value;
 }
 
 - (void)layoutSubviews
