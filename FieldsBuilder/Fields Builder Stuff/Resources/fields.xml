@@ -45,10 +45,19 @@
         <visible>YES</visible>
         <section>section_03</section>
     </field>
-    <field label="Integer Value">
+    <field label="Integer (L=5)">
         <name>integerValue</name>
         <type>int</type>
         <limit>5</limit>
+        <value></value>
+        <required>NO</required>
+        <visible>YES</visible>
+        <section>section_03</section>
+    </field>
+    <field label="Integer (no L)">
+        <name>integerValue</name>
+        <type>int</type>
+        <limit></limit>
         <value></value>
         <required>NO</required>
         <visible>YES</visible>
